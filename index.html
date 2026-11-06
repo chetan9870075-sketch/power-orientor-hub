@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>पावर ओरिएंटर हब – फ़ोटो से हिलता वीडियो (फ़्री)</title>
+<style>
+:root{--bg:#0d1324;--card:#151d35;--gold:#e8a317;--txt:#eef1f8;--mut:#a9b2c9;--line:#26304f}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,"Noto Sans Devanagari",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.w{max-width:760px;margin:auto;padding:22px 18px 40px}
+header{text-align:center;padding:26px 0 10px}
+.logo{font-size:42px}h1{margin:6px 0 4px;font-size:28px}h1 span{color:var(--gold)}
+.sub{color:var(--mut);margin:0 0 18px}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:20px;padding:3px 12px;font-size:13px}
+.btns{display:grid;gap:12px;margin:22px 0}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:700;font-size:18px;padding:16px;border-radius:12px}
+.b1{background:var(--gold);color:#111}.b2{background:transparent;color:var(--gold);border:2px solid var(--gold)}
+.small{font-size:13px;color:var(--mut);text-align:center;margin-top:-4px}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+h2{font-size:19px;margin:0 0 8px;color:var(--gold)}
+ol,ul{margin:0;padding-left:22px}li{margin:5px 0}
+.no li::marker{content:"🚫 "}
+code{background:#0b1020;padding:1px 6px;border-radius:5px;color:#ffd27a}
+footer{text-align:center;color:var(--mut);font-size:13px;margin-top:24px}
+</style>
+</head>
+<body><div class="w">
+<header>
+  <div class="logo">🎬</div>
+  <h1>पावर ओरिएंटर <span>हब</span></h1>
+  <p class="sub">अपनी फ़ोटो को हिलते हुए वीडियो में बदलो। <b>बिल्कुल फ़्री</b>, आपके अपने अकाउंट के GPU पर।</p>
+  <span class="badge">कोई पासवर्ड नहीं • कोई पैसा नहीं • आपकी फ़ोटो सिर्फ़ आपके पास</span>
+</header>
+
+<div class="btns">
+  <a class="btn b1" id="kaggle" href="#">▶ Kaggle में चलाओ (बेहतर)</a>
+  <a class="btn b2" id="colab" href="#">▶ Google Colab में चलाओ</a>
+</div>
+<p class="small">बटन दबाने पर मशीन <b>आपके अपने</b> Kaggle या Google अकाउंट में खुलेगी।</p>
+
+<section>
+  <h2>👣 कैसे चलाएँ</h2>
+  <ol>
+    <li>ऊपर का बटन दबाओ और अपने अकाउंट से लॉगिन करो।</li>
+    <li><b>Kaggle:</b> दाईं ओर <code>Settings → Accelerator → GPU T4 x2</code> और <code>Internet → On</code> करो (पहली बार फ़ोन नंबर से वेरिफ़ाई करना पड़ता है)।<br><b>Colab:</b> <code>Runtime → Change runtime type → T4 GPU</code> चुनो।</li>
+    <li>कोड वाले सेल का ▶ बटन दबाओ।</li>
+    <li>8–15 मिनट बाद <code>https://….gradio.live</code> लिंक आएगा। उसे खोलो।</li>
+    <li>फ़ोटो डालो, लिखो क्या हिलना चाहिए, और <b>🎬 वीडियो बनाओ</b> दबाओ।</li>
+  </ol>
+</section>
+
+<section>
+  <h2>⏱️ सच्ची जानकारी</h2>
+  <ul>
+    <li>पहली बार चालू होने में 8–15 मिनट (मशीन और मॉडल डाउनलोड)।</li>
+    <li>एक 5 सेकंड का वीडियो: <b>480p में 4–6 मिनट</b>, 720p में 9–12 मिनट।</li>
+    <li>फ़ाइनल वीडियो 1080p में मिलता है।</li>
+    <li>फ़्री GPU की सीमा होती है। Kaggle हर हफ़्ते 30 घंटे देता है। Colab की सीमा बदलती रहती है।</li>
+    <li>ये फ़्री GPU है, इसलिए बड़ी कंपनियों जितना तेज़ नहीं है। पर ये आपका अपना है।</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📜 नियम</h2>
+  <ul class="no">
+    <li>असली लोगों (नेता, अभिनेता, जान-पहचान वाले) के नक़ली वीडियो</li>
+    <li>किसी को बदनाम करना, धोखा देना या झूठी ख़बर फैलाना</li>
+    <li>अश्लील, हिंसक या बच्चों से जुड़ा कोई भी ग़लत कंटेंट</li>
+  </ul>
+  <p style="margin:10px 0 0">हर वीडियो पर <b>"AI Generated"</b> लिखा आता है। आप जो बनाते हैं, उसकी ज़िम्मेदारी आपकी है।</p>
+</section>
+
+<section>
+  <h2>🔒 आपकी सुरक्षा</h2>
+  <ul>
+    <li>हम आपसे कोई पासवर्ड, फ़ोन नंबर या पैसा नहीं माँगते।</li>
+    <li>मशीन आपके अपने अकाउंट में चलती है, इसलिए आपकी फ़ोटो और वीडियो हमारे पास नहीं आते।</li>
+    <li>पूरा कोड खुला है। कोई भी इसे जाँच सकता है।</li>
+  </ul>
+</section>
+
+<footer>
+  पावर ओरिएंटर हब • Claude AI की मदद से बनाया गया<br>
+  मॉडल: Wan 2.2 (Apache 2.0) • मशीन: Wan2GP (deepbeepmeep)
+</footer>
+</div>
+<script>
+// ===== सिर्फ़ ये दो लाइन बदलनी हैं =====
+const GH_USER = "chetan9870075-sketch";
+const GH_REPO = "power-orientor-hub";
+// =====================================
+const nb = `github.com/${GH_USER}/${GH_REPO}/blob/main/PowerOrientorHub.ipynb`;
+document.getElementById('colab').href = `https://colab.research.google.com/${nb.replace('github.com', 'github')}`;
+document.getElementById('kaggle').href = `https://www.kaggle.com/kernels/welcome?src=https://${nb}`;
+</script>
+</body>
+</html>
