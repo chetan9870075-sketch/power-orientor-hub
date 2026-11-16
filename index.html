@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>पावर ओरिएंटर हब – फ़ोटो से हिलता वीडियो (फ़्री)</title>
+<title>पावर ओरिएंटर हब 2.0 – फ़ोटो से हिलता वीडियो (फ़्री)</title>
 <style>
 :root{--bg:#0d1324;--card:#151d35;--gold:#e8a317;--txt:#eef1f8;--mut:#a9b2c9;--line:#26304f}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,"Noto Sans Devanagari",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
@@ -27,8 +27,8 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:24px}
 <body><div class="w">
 <header>
   <div class="logo">🎬</div>
-  <h1>पावर ओरिएंटर <span>हब</span></h1>
-  <p class="sub">अपनी फ़ोटो को हिलते हुए वीडियो में बदलो। <b>बिल्कुल फ़्री</b>, आपके अपने अकाउंट के GPU पर।</p>
+  <h1>पावर ओरिएंटर <span>हब 2.0</span></h1>
+  <p class="sub">अपनी फ़ोटो को हिलते हुए वीडियो में बदलो – अब <b>20 सेकंड तक, आवाज़ के साथ</b>। <b>बिल्कुल फ़्री</b>, आपके अपने अकाउंट के GPU पर।</p>
   <span class="badge">कोई पासवर्ड नहीं • कोई पैसा नहीं • आपकी फ़ोटो सिर्फ़ आपके पास</span>
 </header>
 
@@ -39,13 +39,23 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:24px}
 <p class="small">बटन दबाने पर मशीन <b>आपके अपने</b> Kaggle या Google अकाउंट में खुलेगी।</p>
 
 <section>
+  <h2>🆕 नया क्या है</h2>
+  <ul>
+    <li>💎 <b>बेहतर मॉडल:</b> Wan 2.2 14B – ज़्यादा असली मूवमेंट (Kaggle पर)।</li>
+    <li>⏱️ <b>लंबा वीडियो:</b> 5, 10, 15 या 20 सेकंड। हर लाइन में अगला सीन लिखो।</li>
+    <li>🇮🇳 <b>हिंदी में लिखो:</b> AI अपने आप समझेगा। साथ में तैयार मूवमेंट बटन (कैमरा ज़ूम, बारिश, बाल उड़ें...)।</li>
+    <li>🔊 <b>आवाज़:</b> वीडियो देखकर AI ख़ुद आवाज़ बनाएगा, या अपना म्यूज़िक डालो।</li>
+  </ul>
+</section>
+
+<section>
   <h2>👣 कैसे चलाएँ</h2>
   <ol>
     <li>ऊपर का बटन दबाओ और अपने अकाउंट से लॉगिन करो।</li>
     <li><b>Kaggle:</b> दाईं ओर <code>Settings → Accelerator → GPU T4 x2</code> और <code>Internet → On</code> करो (पहली बार फ़ोन नंबर से वेरिफ़ाई करना पड़ता है)।<br><b>Colab:</b> <code>Runtime → Change runtime type → T4 GPU</code> चुनो।</li>
     <li>कोड वाले सेल का ▶ बटन दबाओ।</li>
     <li>8–15 मिनट बाद <code>https://….gradio.live</code> लिंक आएगा। उसे खोलो।</li>
-    <li>फ़ोटो डालो, लिखो क्या हिलना चाहिए, और <b>🎬 वीडियो बनाओ</b> दबाओ।</li>
+    <li>फ़ोटो डालो, हिंदी में लिखो क्या हिलना चाहिए, मॉडल, लंबाई और आवाज़ चुनो, फिर <b>🎬 वीडियो बनाओ</b> दबाओ।</li>
   </ol>
 </section>
 
@@ -53,8 +63,10 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:24px}
   <h2>⏱️ सच्ची जानकारी</h2>
   <ul>
     <li>पहली बार चालू होने में 8–15 मिनट (मशीन और मॉडल डाउनलोड)।</li>
-    <li>एक 5 सेकंड का वीडियो: <b>480p में 4–6 मिनट</b>, 720p में 9–12 मिनट।</li>
-    <li>फ़ाइनल वीडियो 1080p में मिलता है।</li>
+    <li>⚡ 5B मॉडल, हर 5 सेकंड: <b>480p में 4–6 मिनट</b>, 720p में 9–12 मिनट।</li>
+    <li>💎 14B मॉडल, हर 5 सेकंड: <b>480p में लगभग 12–18 मिनट</b>। 20 सेकंड ≈ 1 घंटा। (Colab फ़्री में RAM कम है, इसलिए 14B सिर्फ़ Kaggle पर।)</li>
+    <li>पहली बार 14B मॉडल डाउनलोड होने में 15–25 मिनट और लगते हैं।</li>
+    <li>फ़ाइनल वीडियो 1080p में मिलता है, चाहो तो आवाज़ के साथ।</li>
     <li>फ़्री GPU की सीमा होती है। Kaggle हर हफ़्ते 30 घंटे देता है। Colab की सीमा बदलती रहती है।</li>
     <li>ये फ़्री GPU है, इसलिए बड़ी कंपनियों जितना तेज़ नहीं है। पर ये आपका अपना है।</li>
   </ul>
@@ -66,6 +78,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:24px}
     <li>असली लोगों (नेता, अभिनेता, जान-पहचान वाले) के नक़ली वीडियो</li>
     <li>किसी को बदनाम करना, धोखा देना या झूठी ख़बर फैलाना</li>
     <li>अश्लील, हिंसक या बच्चों से जुड़ा कोई भी ग़लत कंटेंट</li>
+    <li>ऐसा म्यूज़िक जिसका हक़ आपके पास न हो</li>
   </ul>
   <p style="margin:10px 0 0">हर वीडियो पर <b>"AI Generated"</b> लिखा आता है। आप जो बनाते हैं, उसकी ज़िम्मेदारी आपकी है।</p>
 </section>
@@ -81,7 +94,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:24px}
 
 <footer>
   पावर ओरिएंटर हब • Claude AI की मदद से बनाया गया<br>
-  मॉडल: Wan 2.2 (Apache 2.0) • मशीन: Wan2GP (deepbeepmeep)
+  मॉडल: Wan 2.2 5B / 14B (Apache 2.0), MMAudio • मशीन: WanGP (deepbeepmeep)
 </footer>
 </div>
 <script>
